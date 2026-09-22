@@ -1,0 +1,3 @@
+import type {Metadata} from "next"; import {Navbar} from "@/components/navbar"; import {ContactForm} from "@/components/contact-form";
+export const metadata:Metadata={title:"Contact — ShamzPhoto",description:"Get in touch with ShamzPhoto to book a wedding, portrait, fashion, event or brand shoot."};
+export default function Contact(){return <main className="min-h-screen px-6 lg:px-10"><Navbar/><div className="mx-auto max-w-3xl py-32"><p className="text-xs uppercase tracking-[.3em] text-white/40">Contact</p><h1 className="display mt-5 text-6xl sm:text-8xl">Let's make<br/><i>something.</i></h1><ContactForm/></div></main>}

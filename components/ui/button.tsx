@@ -1,0 +1,4 @@
+import * as React from "react"; import {Slot} from "@radix-ui/react-slot"; import {cva,type VariantProps} from "class-variance-authority"; import {cn} from "@/lib/utils";
+const variants=cva("inline-flex items-center justify-center rounded-full text-sm font-medium transition-all",{variants:{variant:{default:"bg-[#f3f0e9] text-black hover:bg-white",outline:"border border-white/25 hover:bg-white hover:text-black"},size:{default:"h-11 px-6",sm:"h-9 px-4 text-xs"}},defaultVariants:{variant:"default",size:"default"}});
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>,VariantProps<typeof variants>{asChild?:boolean}
+export const Button=React.forwardRef<HTMLButtonElement,ButtonProps>(({className,variant,size,asChild,...p},ref)=>{const C=asChild?Slot:"button";return <C ref={ref} className={cn(variants({variant,size,className}))} {...p}/>}); Button.displayName="Button";

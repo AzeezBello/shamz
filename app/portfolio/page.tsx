@@ -1,0 +1,3 @@
+import type {Metadata} from "next"; import {Navbar} from "@/components/navbar"; import {PortfolioGrid} from "@/components/portfolio-grid";
+export const metadata:Metadata={title:"Portfolio — ShamzPhoto",description:"Selected editorial photography — weddings, portraits, fashion and events."};
+export default function Portfolio(){return <main className="min-h-screen px-6 lg:px-10"><Navbar/><div className="mx-auto max-w-[1400px] py-32"><p className="text-xs uppercase tracking-[.3em] text-white/40">Portfolio</p><h1 className="display mt-5 text-6xl sm:text-8xl">Selected <i>work.</i></h1><div className="mt-20"><PortfolioGrid/></div></div></main>}
