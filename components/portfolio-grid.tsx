@@ -5,9 +5,10 @@ import Link from "next/link";
 import {portfolio,categories} from "@/data/portfolio";
 import {Reveal} from "@/components/reveal";
 
-export function PortfolioGrid({filterable=false}:{filterable?:boolean}){
+export function PortfolioGrid({filterable=false,slugs}:{filterable?:boolean;slugs?:string[]}){
   const [active,setActive]=useState("All");
-  const projects=active==="All"?portfolio:portfolio.filter(p=>p.category===active);
+  const pool=slugs?slugs.flatMap(s=>portfolio.find(p=>p.slug===s)??[]):portfolio;
+  const projects=active==="All"?pool:pool.filter(p=>p.category===active);
   return (
     <div>
       {filterable&&(
