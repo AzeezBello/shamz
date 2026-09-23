@@ -1,9 +1,14 @@
-export const portfolio=[
-{title:"The Altar",slug:"the-altar",category:"Weddings",location:"Lagos",year:"2026",image:"/811616671_18571328194078862_105258180805633193_n.jpg"},
-{title:"Modern Love",slug:"modern-love",category:"Weddings",location:"Lagos",year:"2026",image:"/812373501_18571328182078862_6719927098619229674_n.jpg"},
-{title:"Quiet Portraits",slug:"quiet-portraits",category:"Portraits",location:"Lagos",year:"2026",image:"/568554003_18498218272078862_8542583313056568274_n.jpg"},
-{title:"In Her Element",slug:"in-her-element",category:"Portraits",location:"Lagos",year:"2026",image:"/571354090_18498218290078862_8934769411023532285_n.jpg"},
-{title:"Boardroom",slug:"boardroom",category:"Personal Branding",location:"Lagos",year:"2026",image:"/687730910_18538918759078862_8440064517736755213_n.jpg"},
-{title:"After Hours",slug:"after-hours",category:"Fashion",location:"Lagos",year:"2026",image:"/650390520_18035028572784772_5696914715371861863_n.webp"},
-{title:"The Details",slug:"the-details",category:"Editorial",location:"Lagos",year:"2026",image:"/648789035_17973829781847366_4988276418817717671_n.webp"},
-{title:"Celebration",slug:"celebration",category:"Events",location:"Lagos",year:"2026",image:"/688437793_18538918732078862_2987312211756977262_n.jpg"}];
+export type Project={title:string;slug:string;category:string;location:string;year:string;description:string;images:string[]};
+
+export const portfolio:Project[]=[
+{title:"The Altar",slug:"the-altar",category:"Weddings",location:"Lagos",year:"2026",description:"A traditional Yoruba wedding told in white — quiet vows, bold beads and the stillness between ceremonies.",images:["/811616671_18571328194078862_105258180805633193_n.jpg"]},
+{title:"Modern Love",slug:"modern-love",category:"Weddings",location:"Lagos",year:"2026",description:"An intimate study of two people in the hours around their wedding — texture, touch and soft light.",images:["/812373501_18571328182078862_6719927098619229674_n.jpg"]},
+{title:"Quiet Portraits",slug:"quiet-portraits",category:"Portraits",location:"Lagos",year:"2026",description:"A minimal studio session built on negative space, natural texture and an unhurried gaze.",images:["/568554003_18498218272078862_8542583313056568274_n.jpg"]},
+{title:"In Her Element",slug:"in-her-element",category:"Portraits",location:"Lagos",year:"2026",description:"Character-led portraiture — the same room, the same light, a different side of the subject in every frame.",images:["/571354090_18498218290078862_8934769411023532285_n.jpg"]},
+{title:"Boardroom",slug:"boardroom",category:"Personal Branding",location:"Lagos",year:"2026",description:"A personal branding session for a founder — sharp tailoring, warm interiors and imagery built to carry a professional identity across every platform.",images:["/687730910_18538918759078862_8440064517736755213_n.jpg","/689221029_18538918747078862_2228206459081522512_n.jpg","/687761317_18538918750078862_5514877016787352339_n.jpg"]},
+{title:"Quiet Authority",slug:"quiet-authority",category:"Personal Branding",location:"Lagos",year:"2026",description:"A clean, confident studio portrait for an executive profile — one look, one gesture, nothing wasted.",images:["/624998028_18114278404554805_6145051457903524623_n.webp"]},
+{title:"After Hours",slug:"after-hours",category:"Fashion",location:"Lagos",year:"2026",description:"Street-lit fashion after dark — hard flash, deep shadow and attitude to spare.",images:["/650390520_18035028572784772_5696914715371861863_n.webp"]},
+{title:"The Details",slug:"the-details",category:"Editorial",location:"Lagos",year:"2026",description:"An outdoor editorial that leans into texture — driftwood, denim and a direct stare.",images:["/648789035_17973829781847366_4988276418817717671_n.webp"]},
+{title:"Celebration",slug:"celebration",category:"Events",location:"Lagos",year:"2026",description:"Confetti, cake and real joy — event coverage that keeps the energy of the room.",images:["/688437793_18538918732078862_2987312211756977262_n.jpg"]}];
+
+export const categories=[...new Set(portfolio.map(p=>p.category))];
