@@ -1,4 +1,4 @@
-# ShamzPhoto
+# Picxellence
 
 Premium editorial photography portfolio built with Next.js, TypeScript, Tailwind CSS and shadcn-style UI.
 
@@ -9,8 +9,8 @@ npm run dev
 ## Production build
 npm run build
 
-Replace the Unsplash placeholder URLs in `data/portfolio.ts` and the homepage with approved ShamzPhoto photography.
+Replace the Unsplash placeholder URLs in `data/portfolio.ts` and the homepage with approved Picxellence photography.
 
 ## Deploy
 Push to GitHub and import into Vercel.
-# shamz
+# Picxellence

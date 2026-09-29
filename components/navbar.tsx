@@ -11,11 +11,11 @@ export function Navbar(){
     <header className="absolute top-0 z-50 w-full">
       <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-6 lg:px-10">
         <Link href="/" className="text-xl font-semibold" onClick={()=>setOpen(false)}>
-          SHAMZ<span className="text-white/40">PHOTO</span>
+          Pic<span className="text-white/40">xellence</span>
         </Link>
         <nav className="hidden items-center gap-8 text-xs uppercase tracking-[.2em] text-white/70 md:flex">
           {links.map(l=><Link key={l.href} href={l.href} className="transition-colors hover:text-white">{l.label}</Link>)}
-          <a href="https://instagram.com/shamzphoto" target="_blank" rel="noopener noreferrer" aria-label="ShamzPhoto on Instagram" className="transition-colors hover:text-white">
+          <a href="https://www.instagram.com/picxellence101" target="_blank" rel="noopener noreferrer" aria-label="Picxellence on Instagram" className="transition-colors hover:text-white">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" stroke="currentColor" strokeWidth="1.5"/><circle cx="12" cy="12" r="4.25" stroke="currentColor" strokeWidth="1.5"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg>
           </a>
         </nav>
@@ -49,7 +49,7 @@ export function Navbar(){
               </li>
             ))}
             <li>
-              <a href="https://instagram.com/shamzphoto" target="_blank" rel="noopener noreferrer" className="block" onClick={()=>setOpen(false)}>Instagram</a>
+              <a href="https://www.instagram.com/picxellence101" target="_blank" rel="noopener noreferrer" className="block" onClick={()=>setOpen(false)}>Instagram</a>
             </li>
             <li className="pt-2">
               <Button asChild size="sm" className="w-full" onClick={()=>setOpen(false)}>

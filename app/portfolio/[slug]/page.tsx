@@ -1,6 +1,6 @@
 import type {Metadata} from "next"; import Image from "next/image"; import Link from "next/link"; import {notFound} from "next/navigation"; import {Navbar} from "@/components/navbar"; import {Reveal} from "@/components/reveal"; import {portfolio} from "@/data/portfolio";
 export function generateStaticParams(){return portfolio.map(p=>({slug:p.slug}))}
-export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata>{const {slug}=await params;const p=portfolio.find(x=>x.slug===slug);if(!p)return{title:"Project not found — ShamzPhoto"};return{title:`${p.title} — ShamzPhoto`,description:`${p.category} photography by ShamzPhoto — ${p.location}, ${p.year}.`,openGraph:{images:[p.images[0]]}}}
+export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata>{const {slug}=await params;const p=portfolio.find(x=>x.slug===slug);if(!p)return{title:"Project not found — Picxellence"};return{title:`${p.title} — Picxellence`,description:`${p.category} photography by Picxellence — ${p.location}, ${p.year}.`,openGraph:{images:[p.images[0]]}}}
 export default async function Project({params}:{params:Promise<{slug:string}>}){
   const {slug}=await params;
   const i=portfolio.findIndex(x=>x.slug===slug);

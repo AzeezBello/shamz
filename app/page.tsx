@@ -7,13 +7,13 @@ import {Reveal} from "@/components/reveal";
 import {Testimonials} from "@/components/testimonials";
 import {categories} from "@/data/portfolio";
 
-const featured=["boardroom","quiet-portraits","the-details","celebration"];
+const featured=["the-bride","lovers","owambe-season","the-graduate"];
 
 export default function Home(){
   return <main><Navbar/>
 
     <section className="relative min-h-screen overflow-hidden">
-      <Image src="/812400306_18571328170078862_8165856032320857477_n.jpg" alt="Bride and groom in traditional Yoruba wedding attire, photographed by ShamzPhoto" fill priority sizes="100vw" className="object-cover object-top"/>
+      <Image src="/images/639752377_18088742306472113_4775983092006102871_n.jpg" alt="Bride in a white cape gown and turban, photographed by Picxellence" fill priority sizes="100vw" className="object-cover object-top"/>
       <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/35 to-black/30"/>
       <div className="relative mx-auto flex min-h-screen max-w-[1400px] flex-col justify-end px-6 pb-12 lg:px-10">
         <p className="hero-rise mb-5 text-xs uppercase tracking-[.3em] text-white/70">Photography · Lagos · Worldwide</p>
@@ -53,8 +53,8 @@ export default function Home(){
     <section className="border-y border-white/10 bg-[#11110f]">
       <div className="mx-auto grid max-w-[1400px] gap-12 px-6 py-28 lg:grid-cols-[1fr_1.2fr] lg:px-10">
         <Reveal>
-          <p className="mb-6 text-[10px] uppercase tracking-[.3em] text-white/40">About ShamzPhoto</p>
-          <div className="relative aspect-[4/5] overflow-hidden"><Image src="/654358784_18086345602971269_4782885110522234594_n.webp" alt="Editorial fashion portrait by ShamzPhoto" fill sizes="(max-width:1024px) 100vw,33vw" className="object-cover"/></div>
+          <p className="mb-6 text-[10px] uppercase tracking-[.3em] text-white/40">About Picxellence</p>
+          <div className="relative aspect-[4/5] overflow-hidden"><Image src="/images/469224531_18041633786472113_1142451186485176088_n.jpg" alt="Studio portrait on terracotta by Picxellence" fill sizes="(max-width:1024px) 100vw,33vw" className="object-cover"/></div>
         </Reveal>
         <Reveal delay={150}>
           <h2 className="display text-5xl sm:text-6xl">Photography with <i>presence.</i></h2>
